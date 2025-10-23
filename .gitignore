@@ -1,0 +1,56 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build & distribution artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Test & coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage*
+htmlcov/
+
+# Generated C code output directory (adjust if different)
+generated/
+out/
+**/build/
+
+# Logs & profiling
+*.log
+profile.json
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS / Misc
+.DS_Store
+Thumbs.db
+
+# ONNX large model artifacts (keep small examples)
+models/*.onnx
+!models/example_*.onnx
+
+# Node / JS tooling (if added later)
+node_modules/
+
+# Jupyter notebooks checkpoints (if used later)
+.ipynb_checkpoints/
+
+# Binary weight dumps (future optional)
+weights/*.bin
+
