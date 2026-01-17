@@ -22,10 +22,8 @@ MVP skeleton:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install -e .[onxx,dev]
+pip install -e .[onnx,dev]
 ```
-
-(Note: optional extra dependencies spelled `onxx` due to placeholder; adjust to `onnx` if editing `pyproject.toml`.)
 
 ## Usage
 ```bash

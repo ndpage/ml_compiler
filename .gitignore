@@ -27,6 +27,12 @@ generated/
 out/
 **/build/
 
+# Compiled C binaries
+build_dir/inference
+*.o
+*.out
+*.exe
+
 # Logs & profiling
 *.log
 profile.json

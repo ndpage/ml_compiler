@@ -17,14 +17,13 @@ Notes:
 from __future__ import annotations
 import argparse
 import importlib
-import sys
 from pathlib import Path
 
 
 def convert_saved_model_to_tflite(saved_model_dir: str, out_path: str, quant: bool = False, rep_module: str | None = None):
     try:
         import tensorflow as tf
-    except Exception as e:  # pragma: no cover - environment-dependent
+    except Exception:  # pragma: no cover - environment-dependent
         print("TensorFlow not available. Install with: pip install tensorflow")
         raise
 
